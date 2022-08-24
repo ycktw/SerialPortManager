@@ -98,7 +98,7 @@ public class SerialPortManager {
                 @Override
                 public void onDataReceived(byte[] bytes) {
                     try {
-                        logcat("onDataReceived(101):" + BytesUtil.toHexString(bytes));
+                        //logcat("onDataReceived(101):" + BytesUtil.toHexString(bytes));
                         SerialPortManager.this.onDataReceived(bytes);
                     } catch (Exception e) {
                         e.printStackTrace();
